@@ -1,0 +1,41 @@
+# removing dup
+"""mylist = [1,2,3,3,3,4,4,5,8,8,8,8,9,9,6,6]
+mylist = list(dict.fromkeys(mylist))
+ print(mylist)
+"""
+#Armstrong number
+"""
+num = int(input("Enter a number: "))
+
+# initialize sum
+sum = 0
+
+# find the sum of the cube of each digit
+temp = num
+while temp > 0:
+   digit = temp % 10
+   sum += digit ** 3
+   temp //= 10
+
+# display the result
+if num == sum:
+   print(num,"is an Armstrong number")
+else:
+   print(num,"is not an Armstrong number")
+   """
+# linear search in list
+def linear_search(arr, key):
+    for index, value in enumerate(arr):
+        if value == key:
+            return index  
+    return -1  
+
+# Example usage:
+my_list = [10, 5, 7, 2, 1, 6]
+key_value = 7
+
+result = linear_search(my_list, key_value)
+if result != -1:
+    print(f"Target value {key_value} found at index {result}.")
+else:
+    print(f"Target value {key_value} not found in the list.")
