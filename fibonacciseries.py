@@ -7,4 +7,3 @@ for i in range(n):
     temp = first
     first = second
     second = temp+second
-    

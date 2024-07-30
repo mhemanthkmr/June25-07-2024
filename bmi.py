@@ -18,7 +18,7 @@ while True:
             Name = input("Enter name: ")
             Height = float(input("Enter height in m: "))
             Weight = float (input("Enter weight in kg: "))
-            BMI = Weight/(Height)**2
+            BMI = Weight/(Height)*2
             if (BMI <= 18.5):
                 print(Name,"- Your BMI is Underweight")
             elif (BMI >=18.5 and BMI <=24.9):
@@ -46,6 +46,7 @@ while True:
                 print("Invalid input")
     elif (choice ==3):
         print("Exit")
+        break
 
     else:
         print("Invalid choice")
