@@ -1,6 +1,6 @@
 import os
 from langchain_community.utilities import OpenWeatherMapAPIWrapper
-os.environ["OPENWEATHERMAP_API_KEY"]="a7708f9d88d41e367c132b1b500c37f9"
+os.environ["OPENWEATHERMAP_API_KEY"]= api_key=("AI2_key")
 weather = OpenWeatherMapAPIWrapper()
 location = input("enter the location : ")
 result=weather.run(location)
