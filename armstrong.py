@@ -1,7 +1,14 @@
-list=[1,2,3,4,"game","devi",7,8,"fan","ac"]
-print(list)
-print (list[3:6])
-print (list[7:])
-print (list[-6:-3])
-print (list[1::2])
-print (list[1::3])
+  print("not an amstrong")
+#indexing
+n=153
+temp=153
+sum=0
+index=123
+while(n!=0):
+    last =n%10
+    sum+=last **index
+    n=n//10
+if(sum==temp):
+    print("amstrong")
+else:
+    print("not an amstrong")
