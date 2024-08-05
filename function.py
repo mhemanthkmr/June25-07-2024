@@ -1,16 +1,14 @@
-#function to calculate area:
+# function to calculate area
+def calculate_triangle_area():
 
-def calculateArea(base,height):
-    area=(1/2)*base*height
+    base=int(input("Enter the value of base: "))
+    height=int(input("Enter the value of height: "))
+    area=(1/2*base*height)
     return area
 
-base=int(input("Enter your firstValue:"))
-height=int(input("Enter your secondValue:"))
-print(calculateArea(base,height))
-base=12
-height=34
-area=calculateArea(base,height)
-print(area)
+def print_triangle_area():
+    area=calculate_triangle_area()
+    print(f"The area of the triangle is:{area}")
 
 #calculate shapetype:
 def calculate(length,width,shapeType):
@@ -29,3 +27,4 @@ triangle_area=calculate(length,width,"triangle")
 rectangle_area=calculate(length,width,"rectangle")
 print(triangle_area)
 print(rectangle_area)
+
