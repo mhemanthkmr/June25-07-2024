@@ -1,0 +1,10 @@
+def calculatearea(base,height):
+    area=(1/2*base*height)
+    return area
+
+base=int(input("base:"))
+height=int(input("height:"))
+area=calculatearea(base,height)
+print(area)
+
+
